@@ -8,7 +8,13 @@ public class App {
         return "Hello world.";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+
         System.out.println(new App().getGreeting());
+        LatajaceSamochodyNaGaz x = new LatajaceSamochodyNaGaz();
+
+        x.readLinesFromFile("U:\\workspace\\niedzielawszkole\\src\\main\\java\\pl\\saltsoft\\App.java");
+
+        x.writeFile("readme.md");
     }
 }
