@@ -14,11 +14,9 @@ public class motoryzacja<bestBMW> {
 
     public void writeFile() {
 
-
     }
 
     public BMW deserializacja(String json) {
-
 
         Gson gson = new Gson();
         BMW bestBMWAgain = gson.fromJson(json, BMW.class);

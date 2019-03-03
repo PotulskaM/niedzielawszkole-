@@ -19,5 +19,12 @@ public class App {
 
         motoryzacja jakas = new motoryzacja();
         jakas.serializacja(new BMW ("czar", 3,2 ));
+        BMW audu = jakas.deserializacja("{\"name\":\"audi\",\"samochody\":3.0,\"kolor\":2}");
+        System.out.println(audu.name);
+
     }
+
+
+    
+
 }
