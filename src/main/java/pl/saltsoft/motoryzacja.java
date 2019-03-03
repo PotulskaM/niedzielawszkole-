@@ -2,7 +2,7 @@ package pl.saltsoft;
 
 import com.google.gson.Gson;
 
-public class motoryzacja {
+public class motoryzacja<bestBMW> {
 
     void serializacja(BMW bestBMW) {
 
@@ -16,4 +16,13 @@ public class motoryzacja {
 
 
     }
+
+    public BMW deserializacja(String json) {
+
+
+        Gson gson = new Gson();
+        BMW bestBMWAgain = gson.fromJson(json, BMW.class);
+        return bestBMWAgain;
+    }
+
 }

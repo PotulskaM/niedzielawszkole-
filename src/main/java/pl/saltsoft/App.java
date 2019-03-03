@@ -18,5 +18,6 @@ public class App {
         //x.writeFile("readme.md");
 
         motoryzacja jakas = new motoryzacja();
+        jakas.serializacja(new BMW ("czar", 3,2 ));
     }
 }
