@@ -9,22 +9,8 @@ public class App {
     }
 
     public static void main(String[] args) throws Exception {
-
-        //System.out.println(new App().getGreeting());
-       // LatajaceSamochodyNaGaz x = new LatajaceSamochodyNaGaz();
-
-       // x.readLinesFromFile("U:\\workspace\\niedzielawszkole\\src\\main\\java\\pl\\saltsoft\\App.java");
-
-        //x.writeFile("readme.md");
-
-        motoryzacja jakas = new motoryzacja();
-        jakas.serializacja(new BMW ("czar", 3,2 ));
-        BMW audu = jakas.deserializacja("{\"name\":\"audi\",\"samochody\":3.0,\"kolor\":2}");
-        System.out.println(audu.name);
-
+        ManyWorkers mlekoOdKrowyJestSuper = new ManyWorkers();
+        mlekoOdKrowyJestSuper.startManyWorkers(60);
     }
-
-
-    
 
 }
